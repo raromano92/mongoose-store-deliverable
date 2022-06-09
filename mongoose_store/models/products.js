@@ -1,0 +1,20 @@
+//  //////////////////////////////////////////////
+// // Import Dependencies
+// //////////////////////////////////////////////
+// const mongoose = require("./connection");
+
+// ////////////////////////////////////////////////
+// // Define Model
+// ////////////////////////////////////////////////
+// // pull schema and model from mongoose
+// const { Schema, model } = mongoose;
+
+// // make PRODUCTS schema
+// const productsSchema = new Schema({
+//     name: String,
+//     description: String,
+//     img: String,
+//     price: Number,
+//     qty: Number
+// })
+
