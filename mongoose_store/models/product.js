@@ -19,14 +19,16 @@ const productsSchema = new Schema({
     img: String,
     price: {
         type: Number,
-        min: 1
+        min: 0,
     } ,
     qty: {
         type: Number,
-        min: 1,
+        min: 0,
     }
 })
 
-// make product model
-const Product = model("Products", productsSchema);
+// make product model, "Producter" will be what the collection in mongo is named
+const Product = model("Producter", productsSchema);
+
+module.exports = Product;
 

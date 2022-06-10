@@ -1,0 +1,18 @@
+{% layout "layout.liquid" %} {% block content %}
+<div>
+	
+    
+<!-- FOOD IS A PARAMETER (CAN BE ANYTHING), 'Product' NEEDS TOO MATCH THE EXPORTED MODEL VARIABLE  -->
+	{% for product in Product %}
+    <!-- 'product' NEEDS TO MATCH SCHEMA NAME -->
+	<article>
+		<div class="container">
+			
+			{{ product.name }}
+            <img src="{{ product.img }}" alt="pics" />
+		</div>
+	</article>
+
+	{% endfor %}
+</div>
+{% endblock %}
