@@ -1,0 +1,23 @@
+{% layout "layout.liquid" %} {% block content %}
+
+	
+
+	<article>
+
+		
+<!-- 'item' CAN BE ANYTHING, 'data' NEEDS TO MATCH PARAMETER USED IN THE ROUTE -->
+			{% for item in data %}
+
+			<h2>{{ item.name }}</h2>
+
+			<a href="/store/{{ item._id }}">
+				<img src="{{ item.img }}" /></a>
+
+				<h4>{{ item.price }}</h4>
+
+		
+
+	</article>
+
+
+{%endfor%} {% endblock %}

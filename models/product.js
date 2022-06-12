@@ -1,16 +1,10 @@
  //////////////////////////////////////////////
 // Import Dependencies
 //////////////////////////////////////////////
-const mongoose = require("./connection");
-
-////////////////////////////////////////////////
-// Define Model
-////////////////////////////////////////////////
-// pull schema and model from mongoose
-const { Schema, model } = mongoose;
+const mongoose = require('mongoose');
 
 // make PRODUCTS schema
-const productsSchema = new Schema({
+const productsSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true,
@@ -28,7 +22,6 @@ const productsSchema = new Schema({
 })
 
 // make product model, "Producter" will be what the collection in mongo is named
-const Product = model("Producter", productsSchema);
-
-module.exports = Product;
+const product = mongoose.model('product', productsSchema)
+module.exports = product
 

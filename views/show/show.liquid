@@ -1,0 +1,24 @@
+{% layout "layout.liquid" %} {% block content %}
+<div>
+    <article>
+
+
+
+        <h2>
+            {{ data.name }}
+        </h2>
+
+        <img src="{{ data.img }}" alt="pic">
+
+        <h4>
+            {{ data.description }}
+        </h4>
+
+        <h5>
+            {{ data.price }}
+        </h5>
+
+    </article>
+</div>
+
+{% endblock %}
